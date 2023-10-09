@@ -50,7 +50,7 @@ async function detailpage( {params} : {
   
 
   const movies = await getData(id)
-  console.log(movies);
+  //console.log(movies);
 
   return (
     
