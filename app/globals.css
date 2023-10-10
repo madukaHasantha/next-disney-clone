@@ -72,7 +72,7 @@ body {
     }
 
     .ImageSliderWrap img{
-      @apply border-solid border-[4px] border-transparent rounded-[4px] w-[100%] h-[100%] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] duration-300
+      @apply border-solid border-[4px] border-transparent rounded-[4px] w-[100%] h-[170px] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] duration-300 sm:h-[100%]
     }
 
     .ImageSliderWrap img:hover {
@@ -95,7 +95,7 @@ body {
      /* Viewers */
 
      .ViewerContainer{
-      @apply mt-[30px] grid gap-[25px] pt-[30px] pr-0 pb-[26px] grid-cols-5
+      @apply mt-[30px] grid gap-[25px] pt-[30px] pr-0 pb-[26px] grid-cols-2 sm:grid-cols-5
 
      }
 
@@ -130,7 +130,7 @@ body {
       }
 
       .MoviesContent{
-        @apply mt-[30px] grid gap-[25px] grid-cols-4 bg-no-repeat ml-[10px] mr-[10px]
+        @apply mt-[30px] grid gap-[25px] grid-cols-2 bg-no-repeat ml-[10px] mr-[10px] sm:grid-cols-3 lg:grid-cols-4
       }
 
       .MoviesWrap{
