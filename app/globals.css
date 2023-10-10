@@ -37,11 +37,11 @@ body {
     }  
 
     .navmenu{
-      @apply flex flex-1 -ml-[32px] items-center sm:ml-[10px] lg:ml-[30px]
+      @apply flex flex-1 -ml-[70px] items-center sm:ml-[10px] lg:ml-[30px]
     }
 
     .navmenu a {
-      @apply flex items-center pl-[5px] sm:pl-[10px] lg:pl-[40px]
+      @apply flex items-center pl-[3px] sm:pl-[10px] lg:pl-[40px]
     }
 
     .navmenu img{
@@ -49,7 +49,7 @@ body {
     }
 
     .navmenu span{
-      @apply relative tracking-widest text-[10px] cursor-pointer sm:text-[13px]
+      @apply relative tracking-widest text-[9px] cursor-pointer sm:text-[13px]
     }
 
     .navmenu span:after {
@@ -210,14 +210,18 @@ body {
         @apply text-white text-[20px] mt-[16px] max-w-[700px] leading-[1.4]
       }
 
+
+
+
+      
        /* Login Page */
 
        .loginContainer{
-        @apply relative mt-[70px] flex items-start justify-center
+        @apply relative mt-[70px] flex items-start justify-center 
        }
 
        .loginContainer::before {
-        @apply bg-top bg-cover content-[""] absolute top-0 bottom-0 left-0 right-0 z-[-1] opacity-70 mt-[70px];
+        @apply bg-top bg-cover content-[""] absolute top-0 bottom-0 left-0 right-0 z-[-1] opacity-70 -mt-[70px];
         background-image: url('/images/login-background.jpg');
       }
 
