@@ -33,27 +33,27 @@ body {
 
     .navbar{
 
-      @apply h-[70px] bg-[#090b13] flex items-center pl-[36px]  tracking-widest
+      @apply h-[70px] bg-[#090b13] flex items-center pl-[6px]  tracking-widest sm:pl-[4vw]
     }  
 
     .navmenu{
-      @apply flex flex-1 ml-[20px] items-center
+      @apply flex flex-1 -ml-[32px] items-center sm:ml-[10px] lg:ml-[30px]
     }
 
     .navmenu a {
-      @apply flex items-center pl-[12px]
+      @apply flex items-center pl-[5px] sm:pl-[10px] lg:pl-[40px]
     }
 
     .navmenu img{
-      @apply h-[20px]
+      @apply h-[20px] opacity-[0] sm:opacity-[1]
     }
 
     .navmenu span{
-      @apply relative tracking-widest text-[13px] cursor-pointer
+      @apply relative tracking-widest text-[10px] cursor-pointer sm:text-[13px]
     }
 
     .navmenu span:after {
-      @apply content-[""] h-[2px] bg-white absolute left-0 right-0 bottom-[-6px] origin-left transition-all duration-700 ease-in-out translate-x-0 opacity-[0]
+      @apply content-[""] h-[2px] bg-white absolute left-0 right-0 bottom-[-6px] origin-left transition-all duration-700 ease-in-out translate-x-0 opacity-[0] -ml-[5px]
     }
 
     .navmenu a:hover span:after {
@@ -61,7 +61,7 @@ body {
     }
 
     .logo img{
-      @apply w-[80px]
+      @apply w-[13px] opacity-0 sm:opacity-100 w-[70px] -ml-[12px]
     }
 
 
