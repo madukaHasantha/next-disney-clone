@@ -159,7 +159,7 @@ body {
       }
 
       .detailpageBackground img{
-        @apply w-[100%] h-[100%] object-cover mt-[70px]
+        @apply  object-fill h-[100%] w-[100%] mt-[70px] sm:w-[100%] sm:h-[100%] sm:object-fill;
       }
 
       .detailpageImageTitlt{
@@ -171,11 +171,14 @@ body {
       }
 
       .detailpageControls{
-        @apply flex items-center 
+        @apply flex items-center ml-[5px] sm:ml-[5px]
       }
 
       .detailpagePlayButton{
-        @apply rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[56px] bg-gray-200 cursor-pointer border-none text-black tracking-[1.8px]
+        @apply rounded-[4px] text-[15px] py-0 px-[24px] mr-[20px] flex items-center h-[40px]  bg-gray-200 cursor-pointer border-none text-black tracking-[1.8px] sm:h-[56px]
+      }
+      .detailpagePlayButton img{
+        @apply h-[29px] -ml-[10px] sm:h-[40px]
       }
 
       .detailpagePlayButton:hover{
@@ -183,7 +186,11 @@ body {
       }
 
       .detailpageTrailerButton{
-        @apply bg-opacity-30 border border-solid border-white text-white uppercase rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[56px] bg-gray-800 cursor-pointer tracking-[1.8px]
+        @apply bg-opacity-30 border border-solid border-white text-white uppercase rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[40px] bg-gray-800 cursor-pointer tracking-[1.8px] sm:h-[56px]
+      }
+
+      .detailpageTrailerButton img{
+        @apply h-[29px] -ml-[10px] sm:h-[40px]
       }
 
       .detailpageTrailerButton:hover{
@@ -191,23 +198,23 @@ body {
       }
 
       .detailpageAddButton{
-        @apply mr-[16px] w-[44px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-800 bg-opacity-60 cursor-pointer 
+        @apply mr-[16px] w-[49px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-800 bg-opacity-60 cursor-pointer sm:w-[44px]
       }
 
       .detailpageAddButton span{
-        @apply text-[40px] text-white mb-[8px]
+        @apply text-[40px] text-white mb-[8px] mr-[1px] sm:mb-[10px] sm:ml-[2px]
       }
 
       .detailpageGroupWatchButton{
-        @apply mr-[16px] w-[44px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-900 bg-opacity-60 cursor-pointer 
+        @apply mr-[16px] w-[49px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-900 bg-opacity-60 cursor-pointer sm:w-[44px]
       }
 
       .detailpageSubTitle{
-        @apply text-[15px] min-h-[20px] mt-[16px] text-white
+        @apply text-[10px] min-h-[20px] mt-[16px] text-white sm:text-[15px]
       }
 
       .detailpageDescription{
-        @apply text-white text-[20px] mt-[16px] max-w-[700px] leading-[1.4]
+        @apply text-white text-[12px] mt-[16px] max-w-[300px] leading-[1.4] sm:text-[20px] sm:max-w-[700px]
       }
 
 
