@@ -1,13 +1,16 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar2 = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="/images/logo.svg" alt="Logo" />
+        <Link href="/DisneyHome">
+          <img src="/images/logo.svg" alt="Logo" />
+        </Link>
       </div>
       <div className="navmenu">
-        <a>
+        <a href="/DisneyHome">
           <img src="/images/home-icon.svg" />
           <span>HOME</span>
         </a>
