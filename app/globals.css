@@ -33,27 +33,27 @@ body {
 
     .navbar{
 
-      @apply h-[70px] bg-[#090b13] flex items-center pl-[36px]  tracking-widest
+      @apply h-[70px] bg-[#090b13] flex items-center pl-[6px]  tracking-widest sm:pl-[4vw]
     }  
 
     .navmenu{
-      @apply flex flex-1 ml-[20px] items-center
+      @apply flex flex-1 -ml-[70px] items-center sm:ml-[10px] lg:ml-[30px]
     }
 
     .navmenu a {
-      @apply flex items-center pl-[12px]
+      @apply flex items-center pl-[3px] sm:pl-[10px] lg:pl-[40px]
     }
 
     .navmenu img{
-      @apply h-[20px]
+      @apply h-[20px] opacity-[0] sm:opacity-[1]
     }
 
     .navmenu span{
-      @apply relative tracking-widest text-[13px] cursor-pointer
+      @apply relative tracking-widest text-[9px] cursor-pointer sm:text-[13px]
     }
 
     .navmenu span:after {
-      @apply content-[""] h-[2px] bg-white absolute left-0 right-0 bottom-[-6px] origin-left transition-all duration-700 ease-in-out translate-x-0 opacity-[0]
+      @apply content-[""] h-[2px] bg-white absolute left-0 right-0 bottom-[-6px] origin-left transition-all duration-700 ease-in-out translate-x-0 opacity-[0] -ml-[5px]
     }
 
     .navmenu a:hover span:after {
@@ -61,7 +61,7 @@ body {
     }
 
     .logo img{
-      @apply w-[80px]
+      @apply w-[13px] opacity-0 sm:opacity-100 w-[70px] -ml-[12px]
     }
 
 
@@ -72,7 +72,7 @@ body {
     }
 
     .ImageSliderWrap img{
-      @apply border-solid border-[4px] border-transparent rounded-[4px] w-[100%] h-[100%] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] duration-300
+      @apply border-solid border-[4px] border-transparent rounded-[4px] w-[100%] h-[170px] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] shadow-[0_26px_30px_-10px_rgba(0,0,0,0.69)] duration-300 sm:h-[100%]
     }
 
     .ImageSliderWrap img:hover {
@@ -95,7 +95,7 @@ body {
      /* Viewers */
 
      .ViewerContainer{
-      @apply mt-[30px] grid gap-[25px] pt-[30px] pr-0 pb-[26px] grid-cols-5
+      @apply mt-[30px] grid gap-[25px] pt-[30px] pr-0 pb-[26px] grid-cols-2 sm:grid-cols-5
 
      }
 
@@ -130,7 +130,7 @@ body {
       }
 
       .MoviesContent{
-        @apply mt-[30px] grid gap-[25px] grid-cols-4 bg-no-repeat ml-[10px] mr-[10px]
+        @apply mt-[30px] grid gap-[25px] grid-cols-2 bg-no-repeat ml-[10px] mr-[10px] sm:grid-cols-3 lg:grid-cols-4
       }
 
       .MoviesWrap{
@@ -159,7 +159,7 @@ body {
       }
 
       .detailpageBackground img{
-        @apply w-[100%] h-[100%] object-cover mt-[70px]
+        @apply  object-fill h-[100%] w-[100%] mt-[70px] sm:w-[100%] sm:h-[100%] sm:object-fill;
       }
 
       .detailpageImageTitlt{
@@ -171,11 +171,14 @@ body {
       }
 
       .detailpageControls{
-        @apply flex items-center 
+        @apply flex items-center ml-[5px] sm:ml-[5px]
       }
 
       .detailpagePlayButton{
-        @apply rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[56px] bg-gray-200 cursor-pointer border-none text-black tracking-[1.8px]
+        @apply rounded-[4px] text-[15px] py-0 px-[24px] mr-[20px] flex items-center h-[40px]  bg-gray-200 cursor-pointer border-none text-black tracking-[1.8px] sm:h-[56px]
+      }
+      .detailpagePlayButton img{
+        @apply h-[29px] -ml-[10px] sm:h-[40px]
       }
 
       .detailpagePlayButton:hover{
@@ -183,7 +186,11 @@ body {
       }
 
       .detailpageTrailerButton{
-        @apply bg-opacity-30 border border-solid border-white text-white uppercase rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[56px] bg-gray-800 cursor-pointer tracking-[1.8px]
+        @apply bg-opacity-30 border border-solid border-white text-white uppercase rounded-[4px] text-[15px] py-0 px-[24px] mr-[22px] flex items-center h-[40px] bg-gray-800 cursor-pointer tracking-[1.8px] sm:h-[56px]
+      }
+
+      .detailpageTrailerButton img{
+        @apply h-[29px] -ml-[10px] sm:h-[40px]
       }
 
       .detailpageTrailerButton:hover{
@@ -191,33 +198,37 @@ body {
       }
 
       .detailpageAddButton{
-        @apply mr-[16px] w-[44px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-800 bg-opacity-60 cursor-pointer 
+        @apply mr-[16px] w-[49px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-800 bg-opacity-60 cursor-pointer sm:w-[44px]
       }
 
       .detailpageAddButton span{
-        @apply text-[40px] text-white mb-[8px]
+        @apply text-[40px] text-white mb-[9px] -mr-[1px] sm:mb-[10px] sm:ml-[2px]
       }
 
       .detailpageGroupWatchButton{
-        @apply mr-[16px] w-[44px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-900 bg-opacity-60 cursor-pointer 
+        @apply mr-[16px] w-[49px] h-[44px] flex items-center justify-center rounded-[50%] border-solid border-[2px] border-white  bg-gray-900 bg-opacity-60 cursor-pointer sm:w-[44px]
       }
 
       .detailpageSubTitle{
-        @apply text-[15px] min-h-[20px] mt-[16px] text-white
+        @apply text-[10px] min-h-[20px] mt-[16px] text-white sm:text-[15px]
       }
 
       .detailpageDescription{
-        @apply text-white text-[20px] mt-[16px] max-w-[700px] leading-[1.4]
+        @apply text-white text-[12px] mt-[16px] max-w-[300px] leading-[1.4] sm:text-[20px] sm:max-w-[700px]
       }
 
+
+
+
+      
        /* Login Page */
 
        .loginContainer{
-        @apply relative mt-[70px] flex items-start justify-center
+        @apply relative mt-[70px] flex items-start justify-center 
        }
 
        .loginContainer::before {
-        @apply bg-top bg-cover content-[""] absolute top-0 bottom-0 left-0 right-0 z-[-1] opacity-70 mt-[70px];
+        @apply bg-top bg-cover content-[""] absolute top-0 bottom-0 left-0 right-0 z-[-1] opacity-70 -mt-[70px];
         background-image: url('/images/login-background.jpg');
       }
 
